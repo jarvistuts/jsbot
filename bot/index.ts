@@ -7,8 +7,8 @@ const bot = new Telegraf(BOT_TOKEN);
 
 bot.use(checkMembership);
 
-bot.start((ctx) => ctx.reply('Hello Unique'));
-bot.help((ctx) => ctx.reply('send sticker unique'));
+bot.start((ctx) => ctx.reply('Welcome, send sticker to check'));
+bot.help((ctx) => ctx.reply('send sticker'));
 bot.on('sticker', (ctx) => ctx.reply('👍'));
 bot.hears('hi', (ctx) => ctx.reply('who are you'));
 
