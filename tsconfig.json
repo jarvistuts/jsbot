@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",     // Modern JavaScript
+    "module": "CommonJS",  // For Node.js compatibility
+    "lib": ["ES2020"],
+    "outDir": "dist",      // Compiled files go here
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,         // Enforce strict typing
+    "skipLibCheck": true,   // Avoid checking type definitions in node_modules
+    "sourceMap": true       // Generate source maps for debugging
+  },
+  "include": ["bot/**/*.ts", "middleware/**/*.ts", "config.ts"],  // Files to compile
+  "exclude": ["node_modules"]
+}
